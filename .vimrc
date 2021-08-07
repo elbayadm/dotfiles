@@ -19,13 +19,28 @@ endif
 " Active plugins
 call plug#begin('~/.vim/plugged')
 
+set nocompatible
+filetype plugin on
+syntax on
+
+" VimWiki
+"Plug 'vimwiki/vimwiki'
+
 " Markdown
 Plug 'JamshedVesuna/vim-markdown-preview'
+"Plug 'godlygeek/tabular'
+"Plug 'plasticboy/vim-markdown'
+
 " Latex
 Plug 'lervag/vimtex'
 
 " Fzf
 Plug '~/.fzf'
+
+" Highlight the current section
+Plug 'junegunn/limelight.vim'
+" Distraction free
+Plug 'junegunn/goyo.vim'
 
 " Code commenter
 Plug 'scrooloose/nerdcommenter'
@@ -346,9 +361,9 @@ let g:vimtex_view_method='skim'
 let g:vimtex_view_skim_activate=1
 
 " Markdown
-let vim_markdown_preview_github=1
+"let vim_markdown_preview_github=1
 let vim_markdown_preview_hotkey='<C-m>'
-let vim_markdown_preview_browser='Google Chrome'
+"let vim_markdown_preview_browser='Google Chrome'
 
 
 

@@ -1,5 +1,5 @@
 echoinria (){
-ssh -NfL $1":localhost:"$1 zeus
+ssh -NfL $1":localhost:"$1 alg
 }
 
 echolig (){

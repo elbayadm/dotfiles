@@ -1,0 +1,2 @@
+mogrify -depth 8 -format png -define PNG:compression-level=9 -define PNG:compression-strategy=2 -define PNG:compression-filter=9 -path $2 $1
+
