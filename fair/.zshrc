@@ -2,12 +2,13 @@
 
 source /etc/profile
 echo "Setting up you environment @fair"
-FBDIR=$HOME/.dotfiles/fair
+export FBDIR=$HOME/.dotfiles/fair
 
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
-source $FBDIR/aliases/slurm.al
+source $FBDIR/aliases
+source $FBDIR/slurm.al
 
 source $FBDIR/zplugrc
 source $FBDIR/papis
